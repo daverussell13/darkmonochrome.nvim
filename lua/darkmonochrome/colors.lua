@@ -12,6 +12,7 @@ function M.setup(config)
     fg_secondary = "#A6A6A6",
     fg_muted = "#848484",
     fg_subtle = "#707070",
+    fg_faint = "#5C5C5C",
     fg_emphasis = "#D0D0D0",
     fg_bright = "#E0E0E0",
     fg_strong = "#F5F5F5",
