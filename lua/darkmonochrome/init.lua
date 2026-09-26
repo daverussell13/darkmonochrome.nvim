@@ -1,25 +1,5 @@
 local M = {}
 
--- bufferline.nvim creates a separate selected highlight for every devicon.
--- Give those generated icon groups the same background as the selected label.
-local function sync_bufferline_selected_icons()
-  local selected = vim.api.nvim_get_hl(0, { name = "BufferLineBufferSelected", link = false })
-  if not selected.bg then
-    return
-  end
-
-  for name, icon in pairs(vim.api.nvim_get_hl(0, { link = false })) do
-    if name:match("^DevIcon") then
-      vim.api.nvim_set_hl(0, "BufferLine" .. name .. "Selected", {
-        fg = icon.fg,
-        bg = selected.bg,
-        bold = false,
-        italic = false,
-      })
-    end
-  end
-end
-
 M.config = {
   transparent = false,
   terminal_colors = true,
@@ -71,8 +51,6 @@ function M.load()
   for group, value in pairs(highlights) do
     vim.api.nvim_set_hl(0, group, value)
   end
-
-  sync_bufferline_selected_icons()
 end
 
 return M
