@@ -145,9 +145,12 @@ function M.setup(c, config)
     ["@lsp.type.struct"] = { link = "Type" },
     ["@lsp.type.enumMember"] = { fg = c.cyan },
     ["@lsp.type.interface"] = { link = "Type" },
-    ["@lsp.type.parameter"] = { fg = c.fg },
-    ["@lsp.type.property"] = { fg = c.fg },
-    ["@lsp.type.variable"] = { fg = c.fg },
+    -- Defer variable roles to Tree-sitter. An empty semantic-token group lets
+    -- captures such as @variable, @variable.parameter, and @property retain
+    -- their more specific styling instead of being flattened to c.fg.
+    ["@lsp.type.parameter"] = { link = "@variable.parameter" },
+    ["@lsp.type.property"] = { link = "@property" },
+    ["@lsp.type.variable"] = {},
 
     TelescopeNormal = { fg = c.fg, bg = c.surface },
     TelescopeBorder = { fg = c.border_strong, bg = c.surface },
