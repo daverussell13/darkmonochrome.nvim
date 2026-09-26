@@ -28,6 +28,13 @@ function M.setup(config)
     green_bg = "#182018",
     yellow_bg = "#211F16",
     blue_bg = "#181D20",
+    -- Brighter ANSI-derived syntax accents for legibility on the dark background.
+    syntax_red = "#B07070",
+    syntax_green = "#80A680",
+    syntax_yellow = "#B0A670",
+    syntax_blue = "#8096B0",
+    syntax_magenta = "#A680A6",
+    syntax_cyan = "#80A6A6",
 
     -- Editor-specific roles derived exclusively from the palette above.
     cursor_line = "#121212",
