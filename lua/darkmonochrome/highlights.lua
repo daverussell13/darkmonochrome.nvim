@@ -163,7 +163,7 @@ function M.setup(c, config)
     LazyNormal = { fg = c.fg, bg = c.surface },
     LazyButton = { fg = c.fg, bg = c.surface_hover },
     LazyButtonActive = { fg = c.white, bg = c.surface_active, bold = true },
-    LazyH1 = { fg = c.bg, bg = c.fg_bright, bold = true },
+    LazyH1 = { fg = c.white, bg = c.surface_active, bold = true },
     SnacksPicker = { fg = c.fg, bg = c.surface },
     SnacksPickerBorder = { fg = c.border_strong, bg = c.surface },
     SnacksPickerInput = { fg = c.fg, bg = c.surface_hover },
