@@ -10,7 +10,7 @@ Neovim 0.9+
 
 ```lua
 {
-  "daverussell1309/darkmonochrome.nvim",
+  "daverussell13/darkmonochrome.nvim",
   lazy = false,
   priority = 1000,
   opts = {},
