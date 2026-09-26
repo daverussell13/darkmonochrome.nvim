@@ -1,6 +1,6 @@
 # darkmonochrome.nvim
 
-A restrained, grayscale-first Neovim colorscheme built from the Dark Monochrome palette. The interface stays deliberately quiet; desaturated color is reserved for diagnostics, Git changes, syntax, and terminal semantics.
+A restrained, grayscale-first Neovim colorscheme built from the Dark Monochrome palette. Code syntax and the interface stay deliberately quiet; desaturated color is reserved for diagnostics, Git changes, diffs, and terminal semantics.
 
 ## Requirements
 
