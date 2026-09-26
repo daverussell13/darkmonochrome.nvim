@@ -73,6 +73,18 @@ function M.load()
   end
 
   sync_bufferline_selected_icons()
+
+  -- Devicons can be loaded lazily, after the colorscheme itself. Run once the
+  -- bufferline has rendered as well, so its generated icon groups are updated.
+  local group = vim.api.nvim_create_augroup("DarkMonochromeBufferline", { clear = true })
+  vim.api.nvim_create_autocmd({ "VimEnter", "BufEnter" }, {
+    group = group,
+    callback = function()
+      if vim.g.colors_name == "darkmonochrome" then
+        vim.defer_fn(sync_bufferline_selected_icons, 10)
+      end
+    end,
+  })
 end
 
 return M
