@@ -13,7 +13,7 @@ function M.setup(c, config)
     FloatTitle = { fg = c.fg_bright, bg = c.surface, bold = true },
     ColorColumn = { bg = c.surface },
     Conceal = { fg = c.fg_muted },
-    Cursor = { fg = c.bg, bg = c.fg_bright },
+    Cursor = { fg = c.bg, bg = c.fg },
     CursorColumn = { bg = c.cursor_line },
     CursorLine = { bg = c.cursor_line },
     CursorLineNr = { fg = c.white, bold = true },
