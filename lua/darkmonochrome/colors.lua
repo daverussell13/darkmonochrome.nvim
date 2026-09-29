@@ -40,7 +40,8 @@ function M.setup(config)
 
     -- Editor-specific roles derived exclusively from the palette above.
     cursor_line = "#121212",
-    selection = "#1A1A1A",
+    selection = "#303030",
+    selection_fg = "#C4C4C4",
     match = "#222222",
     gutter = "#666666",
     hint = "#80A6A6",
