@@ -102,6 +102,13 @@ function M.setup(c, config)
     GitSignsAdd = { fg = c.git_add },
     GitSignsChange = { fg = c.git_change },
     GitSignsDelete = { fg = c.git_delete },
+    MiniDiffSignAdd = { fg = c.git_add },
+    MiniDiffSignChange = { fg = c.git_change },
+    MiniDiffSignDelete = { fg = c.git_delete },
+    MiniDiffOverAdd = { link = "DiffAdd" },
+    MiniDiffOverChange = { link = "DiffText" },
+    MiniDiffOverContext = { link = "DiffChange" },
+    MiniDiffOverDelete = { link = "DiffDelete" },
 
     DiagnosticError = { fg = c.red },
     DiagnosticWarn = { fg = c.yellow },
