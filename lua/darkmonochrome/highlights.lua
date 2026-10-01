@@ -336,9 +336,16 @@ function M.setup(c, config)
     FlashLabel = { fg = c.bg, bg = c.fg_bright, bold = true },
     FlashMatch = { fg = c.white, bg = c.surface_active },
     FlashCurrent = { fg = c.bg, bg = c.yellow, bold = true },
-    IlluminatedWordText = { bg = c.surface_hover },
-    IlluminatedWordRead = { bg = c.surface_hover },
+    -- vim-illuminate (including its legacy group names).
+    IlluminatedWordText = { bg = c.surface_active },
+    IlluminatedWordRead = { bg = c.surface_active },
     IlluminatedWordWrite = { bg = c.surface_active },
+    illuminatedCurWord = { bg = c.surface_active },
+    illuminatedWord = { bg = c.surface_active },
+
+    -- mini.cursorword, enabled by LazyVim's extra.
+    MiniCursorword = { bg = c.surface_active },
+    MiniCursorwordCurrent = { bg = c.surface_active },
     IndentBlanklineChar = { fg = c.border },
     IndentBlanklineContextChar = { fg = c.fg_muted },
     IblIndent = { fg = c.border },
