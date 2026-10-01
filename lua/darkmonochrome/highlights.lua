@@ -336,10 +336,10 @@ function M.setup(c, config)
     FlashLabel = { fg = c.bg, bg = c.fg_bright, bold = true },
     FlashMatch = { fg = c.white, bg = c.surface_active },
     FlashCurrent = { fg = c.bg, bg = c.yellow, bold = true },
-    -- Cursor-word occurrences use an explicit foreground and strong neutral background.
-    IlluminatedWordText = { fg = c.white, bg = c.match },
-    IlluminatedWordRead = { fg = c.white, bg = c.match },
-    IlluminatedWordWrite = { fg = c.white, bg = c.match },
+    -- Make every cursor-word occurrence match the block cursor exactly.
+    IlluminatedWordText = { link = "Cursor" },
+    IlluminatedWordRead = { link = "Cursor" },
+    IlluminatedWordWrite = { link = "Cursor" },
     IndentBlanklineChar = { fg = c.border },
     IndentBlanklineContextChar = { fg = c.fg_muted },
     IblIndent = { fg = c.border },
