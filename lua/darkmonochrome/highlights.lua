@@ -336,10 +336,10 @@ function M.setup(c, config)
     FlashLabel = { fg = c.bg, bg = c.fg_bright, bold = true },
     FlashMatch = { fg = c.white, bg = c.surface_active },
     FlashCurrent = { fg = c.bg, bg = c.yellow, bold = true },
-    -- Cursor-word occurrences need a stronger contrast than hover states.
-    IlluminatedWordText = { bg = c.match },
-    IlluminatedWordRead = { bg = c.match },
-    IlluminatedWordWrite = { bg = c.match },
+    -- Cursor-word occurrences use an explicit foreground and strong neutral background.
+    IlluminatedWordText = { fg = c.white, bg = c.match },
+    IlluminatedWordRead = { fg = c.white, bg = c.match },
+    IlluminatedWordWrite = { fg = c.white, bg = c.match },
     IndentBlanklineChar = { fg = c.border },
     IndentBlanklineContextChar = { fg = c.fg_muted },
     IblIndent = { fg = c.border },
