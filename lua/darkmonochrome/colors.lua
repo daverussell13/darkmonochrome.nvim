@@ -3,6 +3,8 @@ local M = {}
 function M.setup(config)
   local c = {
     bg = "#080808",
+    -- Retain the palette background for foreground contrast when transparent=true.
+    bg_opaque = "#080808",
     surface = "#121212",
     surface_hover = "#1A1A1A",
     surface_active = "#222222",
