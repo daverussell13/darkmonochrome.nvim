@@ -42,7 +42,7 @@ function M.setup(config)
     cursor_line = "#121212",
     selection = "#303030",
     selection_fg = "#C4C4C4",
-    match = "#222222",
+    match = "#303030",
     gutter = "#666666",
     hint = "#80A6A6",
     debug = "#848484",
