@@ -41,10 +41,13 @@ function M.setup(config)
     syntax_cyan = "#80A6A6",
 
     -- Editor-specific roles derived exclusively from the palette above.
-    cursor_line = "#121212",
+    cursor_line = "#1A1A1A",
     selection = "#303030",
     selection_fg = "#C4C4C4",
     match = "#5C5C5C",
+    -- LSP references sit between Visual (#303030) and Search (#4A4A4A) so the cursor stays visible.
+    reference_fg = "#E0E0E0",
+    reference_bg = "#3D3D3D",
     gutter = "#666666",
     hint = "#80A6A6",
     debug = "#848484",
@@ -54,8 +57,9 @@ function M.setup(config)
     git_add_bg = "#182018",
     git_change_bg = "#181D20",
     git_delete_bg = "#211919",
-    search_fg = "#FFFFFF",
-    search_bg = "#303030",
+    diff_text_bg = "#43535D",
+    search_fg = "#E0E0E0",
+    search_bg = "#4A4A4A",
   }
 
   if config.transparent then
