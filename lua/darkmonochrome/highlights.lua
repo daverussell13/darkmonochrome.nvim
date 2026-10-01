@@ -51,7 +51,7 @@ function M.setup(c, config)
     SpecialKey = { fg = c.fg_disabled },
     Whitespace = { fg = c.fg_disabled },
     EndOfBuffer = { fg = c.bg },
-    QuickFixLine = { bg = c.surface_hover, bold = true },
+    QuickFixLine = { bg = c.quickfix_bg, bold = true },
     SpellBad = { sp = c.red, undercurl = true },
     SpellCap = { sp = c.yellow, undercurl = true },
     SpellLocal = { sp = c.blue, undercurl = true },
@@ -121,7 +121,7 @@ function M.setup(c, config)
     DiagnosticUnderlineHint = { sp = c.cyan, undercurl = true },
     -- Snacks.words uses the standard LSP document-highlight groups. Kept distinct
     -- from Cursor so the cursor block remains visible on a referenced word.
-    LspReferenceText = { fg = c.reference_fg, bg = c.reference_bg, bold = true },
+    LspReferenceText = { bg = c.reference_text_bg },
     LspReferenceRead = { fg = c.reference_fg, bg = c.reference_bg, bold = true },
     LspReferenceWrite = { fg = c.reference_fg, bg = c.reference_bg, bold = true },
 

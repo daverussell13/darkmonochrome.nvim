@@ -45,9 +45,11 @@ function M.setup(config)
     selection = "#303030",
     selection_fg = "#C4C4C4",
     match = "#5C5C5C",
-    -- LSP references sit between Visual (#303030) and Search (#4A4A4A) so the cursor stays visible.
+    -- LSP references sit between Visual (#303030) and Search so the cursor stays visible.
     reference_fg = "#E0E0E0",
     reference_bg = "#3D3D3D",
+    -- "Text" highlights (gopls control flow, declarations) stay quiet to avoid noise.
+    reference_text_bg = "#222222",
     gutter = "#666666",
     hint = "#80A6A6",
     debug = "#848484",
@@ -58,8 +60,10 @@ function M.setup(config)
     git_change_bg = "#181D20",
     git_delete_bg = "#211919",
     diff_text_bg = "#43535D",
+    -- Restrained warning tint (warning.900) separates search from grayscale references.
     search_fg = "#E0E0E0",
-    search_bg = "#4A4A4A",
+    search_bg = "#44412B",
+    quickfix_bg = "#303030",
   }
 
   if config.transparent then
